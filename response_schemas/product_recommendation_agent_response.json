@@ -1,0 +1,60 @@
+{
+  "agent_name": "Product Recommendation Agent",
+  "agent_id": "698e12e883ad001445fb4f9a",
+  "description": "Engages customers in conversation to understand their needs, searches product catalog, and provides personalized recommendations with detailed product information, comparisons, and alternatives",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "message": "string",
+      "recommendations": [
+        {
+          "productName": "string",
+          "price": "string",
+          "description": "string",
+          "features": [
+            "string"
+          ],
+          "imageUrl": "string",
+          "category": "string",
+          "pros": [
+            "string"
+          ],
+          "cons": [
+            "string"
+          ]
+        }
+      ],
+      "suggestions": [
+        "string"
+      ]
+    }
+  },
+  "example_response": {
+    "result": {
+      "message": "Conversational response to the user",
+      "recommendations": [
+        {
+          "productName": "Name of the product",
+          "price": "Product price",
+          "description": "Brief product description",
+          "features": [
+            "sample string"
+          ],
+          "imageUrl": "Product image URL",
+          "category": "Product category",
+          "pros": [
+            "sample string"
+          ],
+          "cons": [
+            "sample string"
+          ]
+        }
+      ],
+      "suggestions": [
+        "sample string"
+      ]
+    }
+  }
+}
