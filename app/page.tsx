@@ -11,29 +11,6 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { Loader2 } from 'lucide-react'
 import { FiSend, FiRefreshCw, FiChevronDown, FiChevronUp, FiUpload, FiShoppingCart, FiPackage, FiDollarSign, FiTag } from 'react-icons/fi'
 
-// Theme configuration
-const THEME_VARS = {
-  '--background': '160 35% 96%',
-  '--foreground': '160 35% 8%',
-  '--card': '160 30% 99%',
-  '--card-foreground': '160 35% 8%',
-  '--popover': '160 30% 99%',
-  '--popover-foreground': '160 35% 8%',
-  '--primary': '160 85% 35%',
-  '--primary-foreground': '0 0% 100%',
-  '--secondary': '160 30% 93%',
-  '--secondary-foreground': '160 35% 12%',
-  '--accent': '45 95% 50%',
-  '--accent-foreground': '160 35% 8%',
-  '--destructive': '0 84% 60%',
-  '--destructive-foreground': '0 0% 98%',
-  '--muted': '160 25% 90%',
-  '--muted-foreground': '160 25% 40%',
-  '--border': '160 28% 88%',
-  '--input': '160 25% 85%',
-  '--ring': '160 85% 35%',
-} as React.CSSProperties
-
 // Agent and RAG configuration
 const AGENT_ID = '698e12e883ad001445fb4f9a'
 const RAG_ID = '698e12c19cd132f4b7b4d67e'
@@ -441,7 +418,7 @@ export default function Home() {
   }
 
   return (
-    <div style={THEME_VARS} className="min-h-screen bg-gradient-to-br from-[hsl(160,40%,94%)] via-[hsl(180,35%,93%)] via-30% to-[hsl(140,40%,94%)] to-60%">
+    <div className="min-h-screen bg-gradient-to-br from-[hsl(160,40%,94%)] via-[hsl(180,35%,93%)] via-30% to-[hsl(140,40%,94%)] to-60%">
       <div className="h-screen flex flex-col max-w-6xl mx-auto p-4 gap-4">
         {/* Header */}
         <header className="flex items-center justify-between bg-card/75 backdrop-blur-md border border-white/20 rounded-[0.875rem] px-6 py-4 shadow-md">
